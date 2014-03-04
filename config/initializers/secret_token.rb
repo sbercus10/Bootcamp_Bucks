@@ -6,7 +6,11 @@
 # no regular words or you'll be exposed to dictionary attacks.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 BootcampBucks::Application.config.secret_token = ENV['SECRET_TOKEN']
 =======
 BootcampBucks::Application.config.secret_token = ENV['SECRET_TOKEN']
 >>>>>>> a46327d7048ae9113366af25110f3ecfed4b0842
+=======
+BootcampBucks::Application.config.secret_token = ENV['SECRET_TOKEN']
+>>>>>>> d23c0094690daa6215e21e41ddd1d3980ba2b687
