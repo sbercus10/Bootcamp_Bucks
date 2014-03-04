@@ -1,0 +1,37 @@
+<h1>Listing bootcamps</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Tuition cost</th>
+    <th>Down payment</th>
+    <th>Start date</th>
+    <th>End date</th>
+    <th>Length</th>
+    <th>City</th>
+    <th>Cpi</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @bootcamps.each do |bootcamp| %>
+  <tr>
+    <td><%= bootcamp.name %></td>
+    <td><%= bootcamp.tuition_cost %></td>
+    <td><%= bootcamp.down_payment %></td>
+    <td><%= bootcamp.start_date %></td>
+    <td><%= bootcamp.end_date %></td>
+    <td><%= bootcamp.length %></td>
+    <td><%= bootcamp.city %></td>
+    <td><%= bootcamp.cpi %></td>
+    <td><%= link_to 'Show', bootcamp %></td>
+    <td><%= link_to 'Edit', edit_bootcamp_path(bootcamp) %></td>
+    <td><%= link_to 'Destroy', bootcamp, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Bootcamp', new_bootcamp_path %>

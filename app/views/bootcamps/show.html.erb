@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @bootcamp.name %>
+</p>
+
+<p>
+  <b>Tuition cost:</b>
+  <%= @bootcamp.tuition_cost %>
+</p>
+
+<p>
+  <b>Down payment:</b>
+  <%= @bootcamp.down_payment %>
+</p>
+
+<p>
+  <b>Start date:</b>
+  <%= @bootcamp.start_date %>
+</p>
+
+<p>
+  <b>End date:</b>
+  <%= @bootcamp.end_date %>
+</p>
+
+<p>
+  <b>Length:</b>
+  <%= @bootcamp.length %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @bootcamp.city %>
+</p>
+
+<p>
+  <b>Cpi:</b>
+  <%= @bootcamp.cpi %>
+</p>
+
+
+<%= link_to 'Edit', edit_bootcamp_path(@bootcamp) %> |
+<%= link_to 'Back', bootcamps_path %>
