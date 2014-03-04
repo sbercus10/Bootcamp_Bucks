@@ -15,3 +15,6 @@ ADMIN_EMAIL: user@example.com
 ADMIN_PASSWORD: changeme
 ROLES: [admin, user, VIP]
 
+# SECRET_TOKEN: 
+# DEVISE_TOKEN: 
+# DEVISE_MAILER: 
