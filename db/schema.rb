@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140304220908) do
+ActiveRecord::Schema.define(:version => 20140305203015) do
 
   create_table "bootcamps", :force => true do |t|
     t.string   "name"
@@ -24,6 +24,13 @@ ActiveRecord::Schema.define(:version => 20140304220908) do
     t.integer  "cpi"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+  end
+
+  create_table "real_costs", :force => true do |t|
+    t.integer  "salary"
+    t.integer  "loan_length"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "roles", :force => true do |t|

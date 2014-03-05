@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Salary:</b>
+  <%= @real_cost.salary %>
+</p>
+
+<p>
+  <b>Loan length:</b>
+  <%= @real_cost.loan_length %>
+</p>
+
+
+<%= link_to 'Edit', edit_real_cost_path(@real_cost) %> |
+<%= link_to 'Back', real_costs_path %>

@@ -1,4 +1,7 @@
 BootcampBucks::Application.routes.draw do
+  resources :real_costs
+
+
   resources :bootcamps
 
 
