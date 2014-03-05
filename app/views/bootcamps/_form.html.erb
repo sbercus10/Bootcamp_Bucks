@@ -2,13 +2,13 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :tuition_cost %>
+    <%= f.input :name, label: 'Select Bootcamp' %>
+    <%= f.input :tuition_cost, label: 'Enter Tuition of Camp' %>
     <%= f.input :down_payment %>
-    <%= f.input :start_date %>
-    <%= f.input :end_date %>
-    <%= f.input :length %>
-    <%= f.input :city %>
+    <%= f.input :start_date, label: 'First Day of Program' %>
+    <%= f.input :end_date, label: 'Last Day of Program' %>
+    <%= f.input :length, label: 'Length of Program (in weeks)' %>
+    <%= f.input :city, label: 'City Program is Located' %>
     <%= f.input :cpi %>
   </div>
 
