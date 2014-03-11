@@ -1,0 +1,14 @@
+<div class="jumbotron">
+<div class="page-header">
+<div class="authform">
+
+<%= simple_form_for @user do |f| %>
+  <%= f.input :address, label: 'Address' %>
+  <%= f.input :phone_number, label: 'Phone Number' %>
+  <%= f.input :education, label: 'What is your education level?' %>
+  <%= f.input :student_loan_amount, label: 'Do you have any student loans? If so, how much?' %>
+  <%= f.input :current_job, label: 'What is your current occupation?' %>
+  <%= f.input :current_salary, label: 'What is your current salary?' %>
+  <%= f.button :submit %>
+<% end %>
+
