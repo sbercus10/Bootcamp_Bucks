@@ -1,0 +1,12 @@
+<%= simple_form_for(@real_cost) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :salary, label: 'Enter Current Yearly Salary' %>
+    <%= f.input :loan_length, label: 'Select your loan term', collection: [ ['1 Year', '12 Months' ], ['2 Years', '24 Months'], ['3 Years', '36 Months'] ], as: :radio_buttons, label_method: :last, value_method: :first, checked: '1 Year', item_wrapper_class: 'inline'%>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

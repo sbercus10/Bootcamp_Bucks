@@ -1,0 +1,25 @@
+<h1>Listing real_costs</h1>
+
+<table>
+  <tr>
+    <th>Salary</th>
+    <th>Loan length</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @real_costs.each do |real_cost| %>
+  <tr>
+    <td><%= real_cost.salary %></td>
+    <td><%= real_cost.loan_length %></td>
+    <td><%= link_to 'Show', real_cost %></td>
+    <td><%= link_to 'Edit', edit_real_cost_path(real_cost) %></td>
+    <td><%= link_to 'Destroy', real_cost, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Real cost', new_real_cost_path %>
