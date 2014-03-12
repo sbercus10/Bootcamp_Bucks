@@ -11,17 +11,17 @@
   <%= f.input :state, label: 'State', placeholder: ' Utah' %>
   <%= f.input :phone_number, label: 'Phone Number', placeholder: ' (800)555-5555' %>
   <%= f.input :education, label: 'Highest Education Level' %>
-  <%= f.input :student_loan_amount, label: 'Do you have any student loans? If so, enter amount?' %>
-  <%= f.input :current_company, label: 'Current Company' %>
-  <%= f.input :current_job, label: 'Current Job Title?' %>
-  <%= f.input :current_salary, label: 'Current Yearly Salary' %>
-  <%= f.input :personal_reference_name, label: 'Please provide a personal reference' %>
-  <%= f.input :personal_reference_contact, label: 'Email or Phone # of your personal reference' %>
-  <%= f.input :current_living_situation, label: 'Select Current Living Situation?' %>
-  <%= f.input :credit_score, label: 'Credit Score (from CreditKarma.com)' %>
-  <%= f.input :linkedin_profile, label: 'Personal Linkedin Profile Link' %>
-  <%= f.input :facebook_profile, label: 'Personal Facebook Link' %>
-  <%= f.input :twitter_profile, label: 'Personal Twitter Handle' %>
+  <%= f.input :student_loan_amount, label: 'Do you have any student loans? If so, enter amount?', placeholder: ' $8,000 - or - I do not have student loans' %>
+  <%= f.input :current_company, label: 'Current Company', placeholder: ' NewCo' %>
+  <%= f.input :current_job, label: 'Current Job Title?', placeholder: ' VP of Awesomeness' %>
+  <%= f.input :current_salary, label: 'Current Yearly Salary', placeholder: ' $35,000' %>
+  <%= f.input :personal_reference_name, label: 'Please provide a personal reference', placeholder: ' John Doe' %>
+  <%= f.input :personal_reference_contact, label: 'Email or Phone # of your personal reference', placeholder: ' john.doe@example.com' %>
+  <%= f.input :current_living_situation, label: 'Select Current Living Situation?', placeholder: ' Dropdown' %>
+  <%= f.input :credit_score, label: 'Credit Score (from CreditKarma.com)', placeholder: ' 700' %>
+  <%= f.input :linkedin_profile, label: 'Personal Linkedin Profile Link', placeholder: ' www.linkedin.com/example' %>
+  <%= f.input :facebook_profile, label: 'Personal Facebook Link', placeholder: ' www.facebook.com/example' %>
+  <%= f.input :twitter_profile, label: 'Personal Twitter Handle', placeholder: ' @example' %>
   <br>
   <%= f.button :submit %>
 <% end %>
