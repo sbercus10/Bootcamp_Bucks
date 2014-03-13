@@ -13,6 +13,20 @@
 
 ActiveRecord::Schema.define(:version => 20140312202052) do
 
+  create_table "applicants", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "applies", :force => true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "address"
+    t.integer  "phone_number"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
   create_table "bootcamps", :force => true do |t|
     t.string   "name"
     t.integer  "tuition_cost"
@@ -24,6 +38,21 @@ ActiveRecord::Schema.define(:version => 20140312202052) do
     t.integer  "cpi"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+  end
+
+  create_table "first_names", :force => true do |t|
+    t.string   "last_name"
+    t.text     "address"
+    t.integer  "phone_number"
+    t.text     "education"
+    t.integer  "current_outstanding_student_loans"
+    t.text     "current_employment"
+    t.text     "job_title"
+    t.integer  "current_salary"
+    t.text     "personal_reference"
+    t.string   "own_or_rent"
+    t.datetime "created_at",                        :null => false
+    t.datetime "updated_at",                        :null => false
   end
 
   create_table "real_costs", :force => true do |t|
