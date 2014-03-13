@@ -8,6 +8,6 @@ class User < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :role_ids, :as => :admin
-  attr_accessible :first_name, :last_name, :email, :password, :password_confirmation, :remember_me, :address, :phone_number, :education, :student_loan_amount, :current_job, :current_salary
+  attr_accessible :first_name, :last_name, :email, :password, :password_confirmation, :remember_me, :address, :city, :state, :phone_number, :education, :student_loan_amount, :current_company, :current_job, :current_salary, :personal_reference_name, :personal_reference_contact, :current_living_situation, :credit_score, :linkedin_profile, :facebook_profile, :twitter_profile
   
 end

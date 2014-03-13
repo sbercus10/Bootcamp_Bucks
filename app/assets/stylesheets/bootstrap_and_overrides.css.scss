@@ -1,13 +1,22 @@
 // Set our overriding variables up top
 $headings-font-family: "Julius Sans One", sans-serif;
 $font-family-sans-serif: "Open Sans", sans-serif;
-$headings-color: $red-orange;
+$headings-color: $green;
 $font-size-base: 16px;
 
+<<<<<<< HEAD
 $navbar-default-bg: #63b282;
 $navbar-default-link-color: #53bb7f;
+=======
+$jumbotron-bg: #434245;
+$jumbotron-color: white;
+$jumbotron-padding: 70px;
 
-$brand-primary: $red-orange;
+$navbar-default-bg: $blue;
+$navbar-default-link-color: lighten($navbar-default-bg, 35%);
+>>>>>>> 30b8e143d73b1e00dd3f1150f6c8a67f4ef7a051
+
+$brand-primary: $green;
 $brand-success: $green;
 $brand-info: $blue;
 $brand-warning: $yellow;
