@@ -40,17 +40,22 @@ class RealCostsController < ApplicationController
   # POST /real_costs
   # POST /real_costs.json
   def create
-    @real_cost = RealCost.new(params[:real_cost])
+    params
+    @bootcamp = Bootcamp.find_by_name(params[:cost_form][:bootcamp_name])
+    @real_cost = RealCostsCalculator.new(@bootcamp, salary, length).calc
+    render :create
 
-    respond_to do |format|
-      if @real_cost.save
-        format.html { redirect_to @real_cost, notice: 'Real cost was successfully created.' }
-        format.json { render json: @real_cost, status: :created, location: @real_cost }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @real_cost.errors, status: :unprocessable_entity }
-      end
-    end
+    # @real_cost = RealCost.new(params[:real_cost])
+
+    # respond_to do |format|
+    #   if @real_cost.save
+    #     format.html { redirect_to @real_cost, notice: 'Real cost was successfully created.' }
+    #     format.json { render json: @real_cost, status: :created, location: @real_cost }
+    #   else
+    #     format.html { render action: "new" }
+    #     format.json { render json: @real_cost.errors, status: :unprocessable_entity }
+    #   end
+    # end
   end
 
   # PUT /real_costs/1
