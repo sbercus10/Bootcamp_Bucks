@@ -4,7 +4,6 @@ BootcampBucks::Application.routes.draw do
 
   resources :bootcamps
 
-
   authenticated :user do
     root :to => 'home#index'
   end
