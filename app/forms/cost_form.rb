@@ -9,4 +9,7 @@ class CostForm
   end
 
   def initialize()
+
+  end
+
 end

@@ -24,7 +24,10 @@ class RealCostsController < ApplicationController
   # GET /real_costs/new
   # GET /real_costs/new.json
   def new
+    #@user = current_user
     @real_cost = RealCost.new
+    @cost_form = CostForm.new
+    #(current_user)
 
     respond_to do |format|
       format.html # new.html.erb
@@ -43,6 +46,7 @@ class RealCostsController < ApplicationController
     params
     @bootcamp = Bootcamp.find_by_name(params[:cost_form][:bootcamp_name])
     @real_cost = RealCostsCalculator.new(@bootcamp, salary, length).calc
+    
     render :create
 
     # @real_cost = RealCost.new(params[:real_cost])
