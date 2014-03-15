@@ -27,7 +27,8 @@ class RealCostsController < ApplicationController
     yearly_increase = ((new_salary - salary) / salary) * 100
 
     # Breakeven time
-    breakeven_time = @total_oppty_cost / (new_salary / 52)
+    @new_salary = 67000 / 52
+    breakeven_time = @total_oppty_cost / @new_salary
 
 
     render :create
