@@ -5,7 +5,8 @@ class RealCostsController < ApplicationController
     #@user = current_user
     @bootcamps = Bootcamp.all
     @real_costs = RealCost.new
-    @cost_form = CostForm.new
+    @real_costs.bootcamp.new
+    # @cost_form = CostForm.new
   end
 
   # POST /real_costs

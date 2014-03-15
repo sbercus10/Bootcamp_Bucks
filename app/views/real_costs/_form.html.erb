@@ -1,30 +1,21 @@
 <h1>Calculate Your Real Cost of Bootcamp</h1>
 
-<%= form_for @cost_form, url: new_real_cost_path, method: :create do |f| %>
+<%= form_for @real_costs, url: new_real_cost_path, method: :create do |f| %>
 
-  <% @bootcamp.find_by_name %>
-  <%= f.select(:name, Bootcamp.all, :prompt => "Select a Bootcamp") %>
+  <!-- user selects bootcamp by name from db -->
+  <%#= f.collection_select(:name, @bootcamps, :id, :name ) %>
+  <%#= f.select(:name, Bootcamp.all, :prompt => "Select a Bootcamp") %>
+  <%= f.fields_for :bootcamp do |bootcamp| %>
+    <%= bootcamp.select :name, [@bootcamps.each { |x| x.name }] %>
+  <% end %>
   <!-- user input for current_salary -->
-  <%= f.input(:salary) %>
+  <%= f.text_field(:salary) %>
   <%= label_tag(:salary, "What is your current salary?") %>
-  <!-- user input for length -->
-  <%= f.input :length, :as => :select,
-      :collection =>
-      [['12 months', false], ['24 months', false], ['36 months', false]],
-      :include_blank => false,
-      :label => "Loan Length" %>
+  <br>
+  <br>
+  <!-- user input for loan length -->
+  <%= f.select :loan_length, [['12 months', false], ['24 months', false], ['36 months', false]] %>
   
-
-  
-
-<!--     <div class="error_messages">
-      <h2>Form is invalid</h2>
-      <ul>
-        <%# @cost_form.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <%# end %>
-      </ul>
-    </div> -->
   
   <!-- Rest of form omitted -->
 
