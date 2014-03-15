@@ -13,3 +13,8 @@ class CostForm
   end
 
 end
+
+
+Select a Bootcamp - Dropdown
+Enter your current salary
+Select the length of your loan - Radio button (12mo, 24 mo, 36 mo)
