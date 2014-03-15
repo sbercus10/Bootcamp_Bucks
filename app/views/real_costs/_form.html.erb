@@ -1,12 +1,24 @@
-<%= simple_form_for(@real_cost) do |f| %>
-  <%= f.error_notification %>
 
-  <div class="form-inputs">
-    <%= f.input :salary, label: 'Enter Current Yearly Salary' %>
-    <%= f.input :loan_length, label: 'Select your loan term', collection: [ ['1 Year', '12 Months' ], ['2 Years', '24 Months'], ['3 Years', '36 Months'] ], as: :radio_buttons, label_method: :last, value_method: :first, checked: '1 Year', item_wrapper_class: 'inline'%>
-  </div>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
+<%= form_for @cost_form, url: new_real_cost_path, method: :create do |f| %>
+  <% @bootcamp.find_by_name %>
+
+<!--     <div class="error_messages">
+      <h2>Form is invalid</h2>
+      <ul>
+        <%# @cost_form.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <%# end %>
+      </ul>
+    </div> -->
+  
+  <!-- Rest of form omitted -->
+
 <% end %>
+
+<!-- #select bootcamp by name
+#receive salary and loan length input
+#loan summary total tuition @boot.tuition_cost, down_payment @bootcamp.tuition_cost, 5%, total down payment due @bootcamp.down_payment
+#2. real_cost =total_tuition + total_opportunity_costs -->
+
+  

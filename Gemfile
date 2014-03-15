@@ -39,7 +39,7 @@ group :development, :test do
   gem 'pry-doc'
   gem 'pry-rails'
   gem 'ffaker'
-  gem 'letter_opener'
+
 end
 
 group :test do
