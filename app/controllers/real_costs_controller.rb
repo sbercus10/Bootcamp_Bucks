@@ -4,6 +4,8 @@ class RealCostsController < ApplicationController
   def new
     #@user = current_user
     @bootcamps = Bootcamp.all
+    @real_costs = RealCost.new
+    @cost_form = CostForm.new
   end
 
   # POST /real_costs
@@ -21,7 +23,7 @@ class RealCostsController < ApplicationController
     @real_cost = @bootcamp.tuition_cost + @total_oppty_cost
 
     # Expected_increase_yearly_salary
-    yearly_increase = ((new_salary - params[:salary]) / salary) * 100
+    yearly_increase = ((new_salary - salary) / salary) * 100
 
     # Breakeven time
     breakeven_time = @total_oppty_cost / (new_salary / 52)
