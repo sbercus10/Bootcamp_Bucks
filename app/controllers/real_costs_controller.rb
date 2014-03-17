@@ -12,6 +12,7 @@ class RealCostsController < ApplicationController
   # POST /real_costs
   # POST /real_costs.json
   def create
+    @real_cost = RealCost.create(params[:real_cost])
     @bootcamp = Bootcamp.find_by_id 1
     # @real_cost = RealCostsCalculator.new(@bootcamp, salary, length).calc
     # Loan Summary (Total_Tuition, Down_Payment, Interest_Rate, Total_Payment_Due)
@@ -24,10 +25,11 @@ class RealCostsController < ApplicationController
     @real_cost = @bootcamp.tuition_cost + @total_oppty_cost
 
     # Expected_increase_yearly_salary
-    yearly_increase = ((new_salary - salary) / salary) * 100
+     @new_salary = 67000 / 52
+    yearly_increase = ((@new_salary - salary) / salary) * 100
 
     # Breakeven time
-    @new_salary = 67000 / 52
+   
     breakeven_time = @total_oppty_cost / @new_salary
 
 

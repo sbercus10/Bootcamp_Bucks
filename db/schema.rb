@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140312202052) do
+ActiveRecord::Schema.define(:version => 20140316171721) do
 
   create_table "applicants", :force => true do |t|
     t.datetime "created_at", :null => false
@@ -60,6 +60,7 @@ ActiveRecord::Schema.define(:version => 20140312202052) do
     t.integer  "loan_length"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+    t.integer  "bootcamp_id"
   end
 
   create_table "roles", :force => true do |t|
