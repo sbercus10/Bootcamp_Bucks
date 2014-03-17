@@ -44,3 +44,5 @@
     Bootcamp.create(name:"Starter League ", city: "Chicago", down_payment:"$2000", length: "3 weeks", tuition_cost: "$5")
     Bootcamp.create(name:"Starter School ", city: "Chicago", down_payment:"$1625", length: "3 weeks", tuition_cost: "$5")
     Bootcamp.create(name:"Startup Institute", city: "Boston, New York, Chicago", down_payment:"$1312.5", length: "3 weeks", tuition_cost: "$5")
+    Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)Bootcamp.create(name:)
+
