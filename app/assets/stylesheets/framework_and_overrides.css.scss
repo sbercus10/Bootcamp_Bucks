@@ -14,6 +14,10 @@ img {
   margin-right: 40px;
   background-color: white;
 }
+
+.section {
+  padding: 0px;
+}
 .container {
   padding-top: 10px;
 }
@@ -23,7 +27,9 @@ h3 {
 .row {padding-top: 0px;}
 .jumbotron {
   background: url(BGBucks.jpg);
-  height: 430px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  margin-bottom: 15px;
   color: #f0fde8;
   text-shadow: 1px 1.5px 1.2px #375e3a;
   }
