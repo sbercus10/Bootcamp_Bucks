@@ -4,11 +4,12 @@
 
 
     
-    <h3>Sign up</h3>
+    
     <br>
     <br>
           
     <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :role => 'form'}) do |f| %>
+      <h3>Sign up</h3>
       <%= f.input :first_name, label: 'First Name' %>
       <%= f.input :last_name, label: 'Last Name' %>
       <%= f.input :email, placeholder: 'example@domain.com' %>
