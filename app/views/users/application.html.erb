@@ -1,9 +1,8 @@
 <div class="jumbotron">
-<div class="page-header">
+<div class="page-header text-center">
+  <h2>Bootcamp Bucks Application Form</h2>
+  <h3>We want to know more about you. Please answer the following questions.</h3>
 <div class="authform">
-
-<h2>Bootcamp Bucks Application Form</h2>
-<p>We'd like to know more about you. Please answer the questions below.</p>
 
 <%= simple_form_for @user do |f| %>
   <%= f.input :address, label: 'Address', placeholder: ' 1000 State Street, #204' %>
@@ -76,4 +75,8 @@
   <br>
   <%= f.button :submit %>
 <% end %>
+
+</div>
+</div>
+</div>
 

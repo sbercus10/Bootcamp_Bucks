@@ -8,14 +8,14 @@ $light-black: #434245;
 
 
 // Custom fonts
-$navbar-default: white;
+// $navbar-default: white;
 
-
-@import "mixins";
 
 // Import frameworks
 
-@import "sitewide";
-@import "static_pages";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import "mixins";
+@import "homepage";
 @import "bootstrap_and_overrides";
-// @import "framework_and_overrides";
+@import "framework_and_overrides";
+
