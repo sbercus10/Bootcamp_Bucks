@@ -1,27 +1,7 @@
 <div class="jumbotron">
+        <h3 class="text-center">Welcome to Bootcamp Bucks. Please sign up to get started.</h3>
   <div class="page-header">
     <div class="authform">
-
-
-    
-    
-    <br>
-    <br>
-          
-    <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :role => 'form'}) do |f| %>
-      <h3>Sign up</h3>
-      <%= f.input :first_name, label: 'First Name' %>
-      <%= f.input :last_name, label: 'Last Name' %>
-      <%= f.input :email, placeholder: 'example@domain.com' %>
-      <%= f.input :password, label: 'Password', placeholder: 'Minimum of eight characters.' %>
-      <%= f.input :password_confirmation, label: 'Re-enter your password' %>
-      <%= f.button :submit %>
-    <% end %>
-
-
-
-
-
 
       <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :role => 'form'}) do |f| %>
         <h3>Sign up</h3>
