@@ -11,21 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140316171721) do
-
-  create_table "applicants", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "applies", :force => true do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "address"
-    t.integer  "phone_number"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
-  end
+ActiveRecord::Schema.define(:version => 20140312202052) do
 
   create_table "bootcamps", :force => true do |t|
     t.string   "name"
@@ -40,27 +26,11 @@ ActiveRecord::Schema.define(:version => 20140316171721) do
     t.datetime "updated_at",   :null => false
   end
 
-  create_table "first_names", :force => true do |t|
-    t.string   "last_name"
-    t.text     "address"
-    t.integer  "phone_number"
-    t.text     "education"
-    t.integer  "current_outstanding_student_loans"
-    t.text     "current_employment"
-    t.text     "job_title"
-    t.integer  "current_salary"
-    t.text     "personal_reference"
-    t.string   "own_or_rent"
-    t.datetime "created_at",                        :null => false
-    t.datetime "updated_at",                        :null => false
-  end
-
   create_table "real_costs", :force => true do |t|
     t.integer  "salary"
     t.integer  "loan_length"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
-    t.integer  "bootcamp_id"
   end
 
   create_table "roles", :force => true do |t|
