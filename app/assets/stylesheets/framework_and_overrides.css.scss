@@ -66,12 +66,11 @@ section {
 .authform {
   padding-top: 10px;
   max-width: 320px;
-  margin: 0 auto;
+  margin: auto;
 }
 .authform form {
   @extend .well;
-  @extend .well-lg;
-  padding-bottom: 40px;
+  @extend .well-lg; padding: cover;
 }
 .authform .right {
   float: right !important;
@@ -92,6 +91,6 @@ section {
 }
 .button-xs {
   @extend .btn;
-  @extend .btn-#2ba43d;
+  // @extend .btn-#2ba43d;
   @extend .btn-xs;
 }
