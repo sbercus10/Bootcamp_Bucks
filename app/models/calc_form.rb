@@ -6,4 +6,5 @@ class CalcForm
 
 
   attr_accessible :loan_length, :salary
+  
 end
