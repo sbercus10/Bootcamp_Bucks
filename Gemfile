@@ -1,8 +1,9 @@
-source 'https://rubygems.org'
+ 'https://rubygems.org'
 ruby '2.0.0'
 gem 'rails', '3.2.17'
 
 gem 'jquery-rails'
+gem "jquery-ui-rails"
 gem 'bootstrap-sass', '>= 3.0.0.0'
 gem 'cancan'
 gem 'devise'
@@ -10,6 +11,8 @@ gem 'figaro'
 gem 'pg'
 gem 'rolify'
 gem 'simple_form'
+gem 'activeadmin'
+gem "meta_search",    '>= 1.1.0.pre'
 
 group :development do
   gem "letter_opener"
