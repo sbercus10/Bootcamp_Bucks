@@ -4,7 +4,6 @@ ActiveAdmin.register User do
     column :first_name
     column :state
     column :city
-    column :address
     column :phone_number
     column :email                           
     column :last_sign_in_at           

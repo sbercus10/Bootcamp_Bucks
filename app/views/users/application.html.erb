@@ -4,7 +4,7 @@
   <h3>We want to know more about you. Please answer the following questions.</h3>
 <div class="authform">
 
-<%= simple_form_for @user do |f| %>
+<%= simple_form_for @user, url: user_submit_application_path do |f| %>
   <%= f.input :address, label: 'Address', placeholder: ' 1000 State Street, #204' %>
   <%= f.input :city, label: 'City', placeholder: ' Salt Lake City' %>
   <%= f.input :state, :as => :select, 

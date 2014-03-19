@@ -2,8 +2,9 @@ class UsersController < ApplicationController
   before_filter :authenticate_user!
 
   def index
-    authorize! :index, @user, :message => 'Not authorized as an administrator.'
+    
     @users = User.all
+    authorize! :index, @user, :message => 'Not authorized as an administrator.'
   end
 
   def show
@@ -11,10 +12,11 @@ class UsersController < ApplicationController
   end
   
   def update
-    authorize! :update, @user, :message => 'Not authorized as an administrator.'
     @user = User.find(params[:id])
-    if @user.update_attributes(params[:user], :as => :admin)
+    authorize! :update, @user, :message => 'Not authorized as an administrator.'
+    if @user.update_attributes(params[:user])
       redirect_to users_path, :notice => "User updated."
+
     else
       redirect_to users_path, :alert => "Unable to update user."
     end
@@ -33,6 +35,23 @@ class UsersController < ApplicationController
 
   def application
     @user = User.find(params[:id])
+    # redirect_to post_application_path
+  end
+
+  def submit_application
+    @user = User.find(params[:id])
+    authorize! :update, @user, :message => 'Not authorized as an administrator.'
+    if @user.update_attributes(params[:user])
+      redirect_to post_application_path
+
+    else
+      flash.now.alert = "Something went wrong. Double check your information and resubmit."
+      render :application
+    end
+  end
+
+  def post_application
+
   end
 
 end
