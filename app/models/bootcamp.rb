@@ -3,4 +3,3 @@ class Bootcamp < ActiveRecord::Base
   belongs_to :real_cost
   has_many :users
 end
-seed
