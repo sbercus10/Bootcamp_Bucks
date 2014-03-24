@@ -1,13 +1,12 @@
 <h1>Calculate Your Real Cost of Bootcamp</h1>
 
-<%= form_for @real_costs, url: new_real_cost_path, method: :create do |f| %>
+<%= form_for @real_costs, url: real_cost_path, method: :create do |f| %>
 
   <!-- user selects bootcamp by name from db -->
   <%#= f.collection_select(:name, @bootcamps, :id, :name ) %>
   <%#= f.select(:name, Bootcamp.all, :prompt => "Select a Bootcamp") %>
-  <%= f.fields_for :bootcamp do |bootcamp| %>
-    <%= bootcamp.select :name, [@bootcamps.each { |x| x.name }] %>
-  <% end %>
+  <%= f.collection_select :bootcamp_id, Bootcamp.find(:all), :id, :name %>
+  <!-- <%#= f.select :bootcamp_id, [@bootcamps.each { |x| x.name }] %> -->
   <!-- user input for current_salary -->
   <%= f.text_field(:salary) %>
   <%= label_tag(:salary, "What is your current salary?") %>
@@ -15,8 +14,12 @@
   <br>
   <!-- user input for loan length -->
   <%= f.select :loan_length, [['12 months', false], ['24 months', false], ['36 months', false]] %>
+
+   <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
   
-  
+   
   <!-- Rest of form omitted -->
 
 <% end %>
