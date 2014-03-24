@@ -1,4 +1,15 @@
 ActiveAdmin.register User do    
+  # if authorized?
+  #   menu :label => "Students", :priority => 1
+  # else
+  #   menu false
+  # end
+
+  controller do
+    before_filter :authenticate_admin_user!, only: [:index]
+    skip_before_filter :authenticate_admin_user!, only: [:show]
+  end
+
   index do                            
     column :last_name
     column :first_name
@@ -16,6 +27,7 @@ ActiveAdmin.register User do
   filter :city
 
   show do |ad|
+
       attributes_table do
         row :first_name
         row :last_name 

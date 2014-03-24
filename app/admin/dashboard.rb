@@ -1,5 +1,7 @@
 ActiveAdmin.register_page "Dashboard" do
-
+  controller do
+    before_filter :authenticate_admin_user!
+  end
 # ActiveAdmin::Dashboards.build do
 #   section "Your tasks for this week" do
 #     table_for current_admin_user.tasks.where('due_date > ? and due_date < ?', Time.now, 1.week.from_now) do |t|
@@ -30,4 +32,5 @@ ActiveAdmin.register_page "Dashboard" do
       end
     end
   end # content
+
 end

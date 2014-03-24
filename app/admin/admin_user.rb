@@ -1,4 +1,5 @@
-ActiveAdmin.register AdminUser do     
+ActiveAdmin.register AdminUser do 
+before_filter :authenticate_admin_user!, only: [:index]    
   index do                            
     column :email                          
     column :last_sign_in_at           

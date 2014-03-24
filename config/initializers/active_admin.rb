@@ -17,7 +17,7 @@ ActiveAdmin.setup do |config|
   #
   # Note: Recommended image height is 21px to properly fit in the header
   #
-  # config.site_title_image = "/images/logo.png"
+  # config.site_title_image = "logo.svg"
 
   # == Default Namespace
   #
@@ -56,7 +56,7 @@ ActiveAdmin.setup do |config|
   # This setting changes the method which Active Admin calls
   # within the controller.
   config.authentication_method = :authenticate_admin_user!
-
+  config.authentication_method = false
 
   # == Current User
   #
@@ -157,12 +157,12 @@ ActiveAdmin.setup do |config|
   # 
   # To change the default utility navigation to show a link to your website & a logout btn
   # 
-  #   config.namespace :admin do |admin|
-  #     admin.build_menu :utility_navigation do |menu|
-  #       menu.add label: "My Great Website", url: "http://www.mygreatwebsite.com", html_options: { target: :blank }
-  #       admin.add_logout_button_to_menu menu
-  #     end
-  #   end
+    # config.namespace :admin do |admin|
+    #   admin.build_menu :utility_navigation do |menu|
+    #     menu.add label: "My Great Website", url: "http://www.mygreatwebsite.com", html_options: { target: :blank }
+    #     admin.add_logout_button_to_menu menu
+    #   end
+    # end
   #
   # If you wanted to add a static menu item to the default menu provided:
   #
