@@ -13,7 +13,7 @@ class RealCostsController < ApplicationController
   # POST /real_costs.json
   def create
     @real_cost = RealCost.new(params[:real_cost])
-    @bootcamp = Bootcamp.find_by_id(params[:bootcamp_id])
+    @bootcamp = Bootcamp.find(@real_cost.bootcamp_id)
 
     # @real_cost = RealCostsCalculator.new(@bootcamp, salary, length).calc
     # Loan Summary (Total_Tuition, Down_Payment, Interest_Rate, Total_Payment_Due)
@@ -39,10 +39,12 @@ class RealCostsController < ApplicationController
     @real_cost.yearly_increase = yearly_increase
     @real_cost.breakeven_time = breakeven_time
 
-    @real_cost.save
+    @real_cost.save # make if else
+
+    redirect_to @real_cost
   end
 
   def show
-
+    @real_cost = RealCost.find(params[:id])
   end
 end

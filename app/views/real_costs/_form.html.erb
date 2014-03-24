@@ -1,6 +1,6 @@
 <h1>Calculate Your Real Cost of Bootcamp</h1>
 
-<%= form_for @real_costs, url: real_cost_path, method: :create do |f| %>
+<%= form_for @real_costs, controller: :real_cost, method: :create do |f| %>
 
   <!-- user selects bootcamp by name from db -->
   <%#= f.collection_select(:name, @bootcamps, :id, :name ) %>
