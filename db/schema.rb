@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140324164454) do
+ActiveRecord::Schema.define(:version => 20140324184823) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -46,20 +46,6 @@ ActiveRecord::Schema.define(:version => 20140324164454) do
   add_index "admin_users", ["email"], :name => "index_admin_users_on_email", :unique => true
   add_index "admin_users", ["reset_password_token"], :name => "index_admin_users_on_reset_password_token", :unique => true
 
-  create_table "applicants", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "applies", :force => true do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "address"
-    t.integer  "phone_number"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
-  end
-
   create_table "bootcamps", :force => true do |t|
     t.string   "name"
     t.integer  "tuition_cost"
@@ -71,32 +57,17 @@ ActiveRecord::Schema.define(:version => 20140324164454) do
     t.integer  "users_id"
   end
 
-  create_table "first_names", :force => true do |t|
-    t.string   "last_name"
-    t.text     "address"
-    t.integer  "phone_number"
-    t.text     "education"
-    t.integer  "current_outstanding_student_loans"
-    t.text     "current_employment"
-    t.text     "job_title"
-    t.integer  "current_salary"
-    t.text     "personal_reference"
-    t.string   "own_or_rent"
-    t.datetime "created_at",                        :null => false
-    t.datetime "updated_at",                        :null => false
-  end
-
   create_table "real_costs", :force => true do |t|
     t.integer  "salary"
     t.integer  "loan_length"
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
-    t.integer  "bootcamp_id"
     t.integer  "down_payment"
     t.integer  "total_payment_due"
     t.integer  "true_cost"
     t.integer  "yearly_increase"
     t.integer  "breakeven_time"
+    t.integer  "bootcamp_id"
   end
 
   create_table "roles", :force => true do |t|

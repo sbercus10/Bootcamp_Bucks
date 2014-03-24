@@ -1,9 +1,5 @@
 ActiveAdmin.register User do    
-  # if authorized?
-  #   menu :label => "Students", :priority => 1
-  # else
-  #   menu false
-  # end
+  menu :if => proc{ current_admin_user }
 
   controller do
     before_filter :authenticate_admin_user!, only: [:index]
@@ -52,8 +48,8 @@ ActiveAdmin.register User do
         row :last_sign_in_at
         row :sign_in_count
       end
-    end
 
+    end
 end                                   
 
 

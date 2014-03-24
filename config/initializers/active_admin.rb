@@ -5,7 +5,8 @@ ActiveAdmin.setup do |config|
   # Set the title that is displayed on the main layout
   # for each of the active admin pages.
   #
-  config.site_title = "Bootcamp Bucks"
+  # config.site_title = "Bootcamp Bucks", "/users"
+  config.site_title_link = "/"
 
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
@@ -56,7 +57,7 @@ ActiveAdmin.setup do |config|
   # This setting changes the method which Active Admin calls
   # within the controller.
   config.authentication_method = :authenticate_admin_user!
-  config.authentication_method = false
+  # config.authentication_method = false
 
   # == Current User
   #
