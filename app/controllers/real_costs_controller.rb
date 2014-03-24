@@ -27,6 +27,7 @@ class RealCostsController < ApplicationController
 
     # Expected_increase_yearly_salary
     new_salary = 67000 / 52
+    
     yearly_increase = ((new_salary - @real_cost.salary) / @real_cost.salary) * 100 #save it
 
     # Breakeven time
