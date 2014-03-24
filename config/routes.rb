@@ -1,9 +1,9 @@
 BootcampBucks::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-
-  get '/real-costs/new', :to => 'real_costs#new', as: :new_real_cost
-  post '/real-costs', :to => 'real_costs#create'
+  resources :real_costs, only:[:new, :create, :show]
+  # get '/real-costs/new', :to => 'real_costs#new', as: :new_real_cost
+  # post '/real-costs', :to => 'real_costs#create'
 
   get '/post-application', :to => 'users#post_application', as: :post_application
 
