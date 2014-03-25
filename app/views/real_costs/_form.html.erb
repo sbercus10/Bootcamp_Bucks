@@ -1,21 +1,29 @@
-<h1>Calculate the Real Cost of Bootcamp</h1>
+<h3>Real Cost Calculator</h3>
+<h4>Calculate your actual cost to attend a Coding Bootcamp</h4>
 <br>
+<div class="rc-main">
+<div class="rc-calc" style="opacity: 1; width: 340px;">
+<div class="row">
 
-<%= form_for @real_costs, controller: :real_cost, method: :create do |f| %>
-
+ 
+    
+      <%= form_for @real_costs, controller: :real_cost, method: :create do |f| %>
   <!-- user selects bootcamp by name from db -->
   <%#= f.collection_select(:name, @bootcamps, :id, :name ) %>
   <%#= f.select(:name, Bootcamp.all, :prompt => "Select a Bootcamp") %>
-  <%= label_tag(:bootcamp, "Select a bootcamp") %>
-  <%= f.collection_select :bootcamp_id, Bootcamp.find(:all), :id, :name %>
+      <%= label_tag(:bootcamp, "Select a bootcamp") %>
+
+      <%= f.collection_select :bootcamp_id, Bootcamp.find(:all), :id, :name %>
+    
   <!-- <%#= f.select :bootcamp_id, [@bootcamps.each { |x| x.name }] %> -->
   <!-- user input for current_salary -->
-  <br>
-  <br>
-  <%= label_tag(:salary, "Enter your current salary") %>
-  <%= f.text_field(:salary) %>
-  <br>
-  <br>
+  
+    <br>
+    <br>
+    <%= label_tag(:salary, "Enter your current salary") %>
+    <%= f.text_field(:salary) %>
+    <br>
+    <br>
   <!-- user input for loan length -->
   
   <%= label_tag(:loan_length, "How many months will it take you to pay off your loan?") %>
@@ -24,16 +32,21 @@
     <%= f.radio_button :loan_length, '24' %> <%= f.label "24 months" %><br /> 
     <%= f.radio_button :loan_length, '36' %> <%= f.label "36 months" %><br />
   </fieldset>
-<br>
-   <div class="form-actions">
-    <%= f.button :submit %>
+  <br>
+
+
+  <div class="rc-btn">
+    <button type="submit" class="btn btn-default">Calculate</button>
   </div>
-  
-   
+
+</div>
+</div>
+</div>
+</div>
   <!-- Rest of form omitted -->
 
 <% end %>
-
+ 
 <!-- #select bootcamp by name
 #receive salary and loan length input
 #loan summary total tuition @boot.tuition_cost, down_payment @bootcamp.tuition_cost, 5%, total down payment due @bootcamp.down_payment

@@ -1,0 +1,59 @@
+.rc-calc {
+top: 66px;
+padding: 10px 0px 10px 20px;
+margin-left: 600px;
+font-size: 15px;
+padding-bottom: 1px;
+background-color: white;
+border: #118a37 1px solid;
+border-radius: 10px;
+overflow: hidden;
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-ms-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+z-index: 99;
+-webkit-backface-visibility: hidden;
+resize:both;
+overflow:auto;
+}
+
+.rcc-main {
+position: absolute;
+top: 45px;
+max-width: 530px;
+max-height: 320px;
+}
+
+.rc-side{
+position: relative;
+background: white;
+color: #757575;
+width: 326px;
+border-top: 1px solid #007fad;
+border-radius: 0 0 10px 10px;
+margin: 0 auto;
+
+overflow:auto;
+}
+
+.camps-menu select {
+   background: transparent;
+   width: 268px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+   }
+
+.rc-btn {
+  text-align: center;
+  padding: 30px 5px 30px 2px;
+}
+
+
+
+
