@@ -3,6 +3,7 @@ class AddBootcampRefToUsers < ActiveRecord::Migration
 
      change_table :bootcamps do |t|
       t.remove :start_date, :end_date, :cpi
+      t.string :name
       t.references :users
      end 
 

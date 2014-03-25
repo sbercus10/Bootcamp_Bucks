@@ -26,9 +26,12 @@ class RealCostsController < ApplicationController
     true_cost = @bootcamp.tuition_cost + total_oppty_cost #save it
 
     # Expected_increase_yearly_salary
-    new_salary = 67000 / 52
-    
-    yearly_increase = ((new_salary - @real_cost.salary) / @real_cost.salary) * 100 #save it
+    new_salary = (67000 / 52)
+
+    new_salary_number = 67000.0
+    difference = new_salary_number - @real_cost.salary
+    dec_difference = (difference / @real_cost.salary)
+    yearly_increase = (dec_difference * 100).to_i #save it
 
     # Breakeven time
    
