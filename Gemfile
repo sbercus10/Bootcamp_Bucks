@@ -14,6 +14,7 @@ gem 'simple_form'
 gem 'activeadmin'
 gem "meta_search",    '>= 1.1.0.pre'
 gem 'thread_safe', '0.2.0'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 group :development do
   gem "letter_opener"

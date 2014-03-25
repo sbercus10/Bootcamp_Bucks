@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/stripe/stripe-ruby
+  revision: 637d5899f614a6f4d0fa2147f9b3b8b1c8b39b28
+  specs:
+    stripe (1.10.2)
+      json (~> 1.8.1)
+      mime-types (~> 1.25)
+      rest-client (~> 1.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -233,6 +242,8 @@ GEM
       json (~> 1.4)
     responders (1.0.0)
       railties (>= 3.2, < 5)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     rolify (3.4.0)
     ruby_gntp (0.3.4)
     sass (3.3.3)
@@ -314,6 +325,7 @@ DEPENDENCIES
   ruby_gntp
   sass-rails (~> 3.2.3)
   simple_form
+  stripe!
   thread_safe (= 0.2.0)
   uglifier (>= 1.0.3)
   xray-rails
