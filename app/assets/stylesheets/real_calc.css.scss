@@ -13,13 +13,15 @@ width: 800px;
 height: 600px;
 max-width: 100%;
 max-height: 100%;
-margin-top: 10px;
+
 padding-top: 15px;
 margin-left: 4%;
 text-shadow: .025px .025px white;
 }
 
-
+.bottom-part{
+  padding-top: 40px;
+}
 
 .h4 { 
 color: #0B7786;
@@ -30,6 +32,12 @@ color: #0B7786;
   max-width: 100%;
   height: auto;
 }
+
+.real_cost_header{
+  background-color: lightgrey;
+  padding: 20px;
+}
+
 .rc-main{
 margin-left: 30px;
 padding-left: 30px;
@@ -37,53 +45,62 @@ margin-top: 60px;
 padding-top: 10px;
 color: #0071C2;
 max-width: 100%;
-
 }
+
 .back{
   margin-left: 100px;
   margin-bottom: 260px;
 }
 
 .container{
-max-width: 100%;
-color: #0071C2;
-background-color: transparent;
+  padding-top: 60px;   
+  max-width: 100%;
+  color: #0071C2;
+  background-color: transparent;
 }
+
+
+
 .rc-calc {
-
-padding: 10px 10px 10px 20px;
-width: 340px;
-margin-left: 505px;
-margin-top: -90px;
-margin-bottom: 20px;
-font-size: 15px;
-background-color: white;
-border: #118a37 1px solid;
-border-radius: 10px;
-overflow: hidden;
--webkit-transition: all .2s ease-in-out;
--moz-transition: all .2s ease-in-out;
--ms-transition: all .2s ease-in-out;
--o-transition: all .2s ease-in-out;
-transition: all .2s ease-in-out;
-z-index: 99;
--webkit-backface-visibility: hidden;
-
+  padding: 10px 10px 10px 20px;
+  width: 340px;
+  margin-left: 575px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  background-color: white;
+  border: #118a37 1px solid;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  z-index: 99;
+  -webkit-backface-visibility: hidden;
 }
+
 
 .devise{
   margin-top: 30px;
   padding-top: 50px;
 }
-.rc-side{
-position: relative;
-background: white;
-color: #757575;
-width: 326px;
-border-top: 1px solid #007fad;
-border-radius: 0 0 10px 10px;
-margin: 0 auto;
 
+.rc-side{
+  position: relative;
+  background: white;
+  color: #757575;
+  width: 326px;
+  border-top: 1px solid #007fad;
+  border-radius: 0 0 10px 10px;
+  margin: 0 auto;
+}
+
+.real_calc_bottom_text{
+  text-align: center;
+  margin-left: 30px;
+  padding-right: 30px;
 }
 
 .camps-menu select {
@@ -102,11 +119,6 @@ margin: 0 auto;
   padding: 3px 5px 3px 2px;
 }
 
-.form{
-
-
-}
-
 .shockvalue{
   margin-left: 30px;
   margin-top: 15px;
@@ -114,6 +126,46 @@ margin: 0 auto;
 .yourstats{
   margin-left: 30px;
   margin-top: 15px;
+}
+
+.middle{
+  border-right: 1px dashed black;
+  border-left: 1px dashed black;
+}
+
+.circle{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  padding-top: 10px;
+  margin: auto;
+  i{
+  color: white;
+  }
+}
+
+.green{
+  background-color: green;
+}
+
+.green-text{
+  color: green;
+}
+
+.blue{
+  background-color: blue;
+}
+
+.blue-text{
+  color: blue;
+}
+
+.purple{
+  background-color: purple;
+}
+
+.purple-text{
+  color: purple;
 }
 
 
