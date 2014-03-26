@@ -1,9 +1,15 @@
-<h3>Real Cost Calculator</h3>
-<h4>Calculate your actual cost to attend a Coding Bootcamp</h4>
-<br>
+<div class="main">
+<div class="container">
 <div class="rc-main">
-<div class="rc-calc" style="opacity: 1; width: 340px;">
+<h3><strong>Real Cost Calculator</strong></h3>
+
+<h4>Your actual cost to attend a Coding Bootcamp</h4>
+<br>
+</div>
+
+<div class="rc-calc">
 <div class="row">
+
 
  
     
@@ -39,17 +45,22 @@
     <button type="submit" class="btn btn-default">Calculate</button>
   </div>
 
+
+</div>
+<% end %>
 </div>
 </div>
+<div class="back">
+  <%= link_to 'Go back', :back %>
 </div>
 </div>
   <!-- Rest of form omitted -->
 
-<% end %>
+
+
+
+</div>
  
-<!-- #select bootcamp by name
-#receive salary and loan length input
-#loan summary total tuition @boot.tuition_cost, down_payment @bootcamp.tuition_cost, 5%, total down payment due @bootcamp.down_payment
-#2. real_cost =total_tuition + total_opportunity_costs -->
+
 
   

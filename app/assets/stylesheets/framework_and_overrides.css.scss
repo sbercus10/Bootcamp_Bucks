@@ -7,31 +7,36 @@ img {
   margin: 0 auto;
   }
 
-.navbar .container {
-  height: 50px;
-  width: 100%;
-  padding-right:20px;
-  margin-right: 40px;
-  background-color: white;
-}
+// .navbar .container {
+//   height: 50px;
+//   width: 100%;
+//   padding-right:20px;
+//   margin-right: 40px;
+//   background-color: white;
+// }
 
 .section {
   padding: 0px;
+  color: darken(#0BA086, 8%);
 }
 .container {
   padding-top: 10px;
+  color: #777;
 }
-h3 {
-  color: $green;
+.jumbotron-text{
+  color: darken(#0BA086, 4%);
+  font-size: 56%;
 }
-.row {padding-top: 0px;}
+
 .jumbotron {
-  background: url(BGBucks.jpg);
-  padding-top: 30px;
-  padding-bottom: 25px;
-  margin-bottom: 15px;
-  color: #f0fde8;
-  text-shadow: 1px 1.5px 1.2px #375e3a;
+  background: url(jumbo.jpg);
+  padding-top: 70px;
+  padding-bottom: 15px;
+  margin-top: 50;
+  margin-bottom: 10px;
+  text-align: left;
+  color: darken($light-blue, 22%);
+  text-shadow: .25px .25px .25px #375e3a;
   }
 
 // override for the 'Home' navigation link
@@ -40,14 +45,14 @@ h3 {
 // to make views framework-neutral
 .column {
   @extend .col-md-6;
-  @extend .text-center;
+  // @extend .text-center;
   }
 .form {
   @extend .col-md-6;
   }
 .form-centered {
   @extend .col-md-6;
-  @extend .text-center;
+  // @extend .text-center;
   }
 .submit {
   @extend .btn;
@@ -79,9 +84,9 @@ section {
   @extend .btn;
   @extend .btn-primary;
 }
-.authform fieldset {
-  @extend .well;
-}
+// .authform fieldset {
+//   @extend .well;
+// }
 #error_explanation {
   @extend .alert;
   @extend .alert-danger;

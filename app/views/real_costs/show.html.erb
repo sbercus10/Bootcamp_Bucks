@@ -1,21 +1,25 @@
-<h1>Your REAL COST of Bootcamp</h1>
+<div class="main">
+  <h1>Your REAL cost of attending a Coding Bootcamp</h1>
+</div>
 
-  <div class="shockvalue">
-    <span><h3><%= @real_cost.breakeven_time %> weeks to breakeven</h3><p>Based on your current salary and the cost of tuition from attending <%= @real_cost.bootcamp_id %>.</p></span>
-    <span><h3><%= @real_cost.yearly_increase %>% increase in your yearly salary.</h3><p>Based on the average salary of $67,000 of a Jr. Rails Developer.</p></span>
-  </div>
+<div class="container">
 
-<br>
+    <span><p>Based on your current salary and the cost of tuition from attending <%= @real_cost.bootcamp_id %>.</p><h3><strong><%= @real_cost.breakeven_time %> </strong>weeks to breakeven.</h3></span>
 
-  <div class="yourstats">
-    <p>Your true cost for attending this bootcamp is: $<%= @real_cost.true_cost %></p>
+    <span><p>According to the national average salary, a Jr. Rails Developer makes $67,000 a year.</p><h3>This means a <strong><%= @real_cost.yearly_increase %>% </strong>increase in your yearly salary.</h3></span>
+  
+
+      <p>You will owe a down payment (25% of tuition) of: $<%= @real_cost.down_payment %></p>
+      <p>Your true cost for attending this bootcamp is: $<%= @real_cost.true_cost %></p>
     <br>
     <p>Your total payment owed if you finance your bootcamp through Bootcamp Bucks is: $<%= @real_cost.total_payment_due %></p>
     <br>
-    <p>You will owe a down payment (25% of tuition) of: $<%= @real_cost.down_payment %></p>
   </div>
+
+  
 <hr>
 </p>$<%= @real_cost.down_payment %>
+
 
 
 <%= @real_cost.inspect %>

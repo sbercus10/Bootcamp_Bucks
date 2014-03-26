@@ -1,14 +1,15 @@
 // Add your global sass variables up top
-$blue: #409ed5;
-$red-orange: #e33a25;
-$green: #118a37;
-$yellow: #e0c12a;
+$green: #0BA086;
+$lime: #6EAB4B;
+$blue: #005DC2;
+$light-blue: #13C0E5;
+$off: #F4F4F2;
+
 $dark-gray: #1d1d1d;
 $light-black: #434245;
 
 
-// Custom fonts
-// $navbar-default: white;
+
 
 
 // Import frameworks
@@ -19,5 +20,6 @@ $light-black: #434245;
 @import "bootstrap_and_overrides";
 @import "jquery.ui.all";
 @import "framework_and_overrides";
-@import "real_calc.css.scss"
+@import "real_calc.css.scss";
+@import "login.css.scss";
 

@@ -1,7 +1,8 @@
-<div class="authform">
+<div class="panel panel-info" >
+  <div class="authform">
   <%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post, :role => 'form'}) do |f| %>
-    <h3>Forgot your password?</h3>
-    <p>We'll send password reset instructions.</p>
+    <div class="panel-title"><h3>Forgot your password?</h3></div>
+    <p>Enter your email below and we'll send you password reset instructions.</p>
     <%= devise_error_messages! %>
     <div class="form-group">
       <%= f.label :email %>
@@ -9,4 +10,5 @@
     </div>
      <%= f.submit 'Reset Password', :class => 'button right' %>
   <% end %>
+</div>
 </div>

@@ -1,9 +1,60 @@
+
+  
+.main{
+background: url(BBg.jpg) ;
+background-repeat: no-repeat;
+background-size: 100%;}
+
+.main{
+//   background: url(BBg.jpg) ;
+// background-repeat: no-repeat;
+// background-size: 800px 650px;
+width: 800px;
+max-width: 100%;
+margin-top: 30px;
+padding-top: 15px;
+margin-left: 4%;
+text-shadow: .025px .025px white;
+}
+
+
+
+.h4 { 
+color: #0B7786;
+}
+
+
+.url {
+  max-width: 100%;
+  height: auto;
+}
+.rc-main{
+margin-left: 30px;
+padding-left: 30px;
+margin-top: 60px;
+padding-top: 10px;
+color: #0071C2;
+max-width: 100%;
+
+}
+.back{
+  margin-left: 100px;
+  margin-bottom: 260px;
+}
+
+.container{
+max-width: 100%;
+color: #0071C2;
+background-color: transparent;
+}
 .rc-calc {
-top: 66px;
-padding: 10px 0px 10px 20px;
-margin-left: 600px;
+
+padding: 10px 10px 10px 20px;
+width: 340px;
+margin-left: 575px;
+margin-top: 0px;
+margin-bottom: 20px;
 font-size: 15px;
-padding-bottom: 1px;
 background-color: white;
 border: #118a37 1px solid;
 border-radius: 10px;
@@ -15,17 +66,8 @@ overflow: hidden;
 transition: all .2s ease-in-out;
 z-index: 99;
 -webkit-backface-visibility: hidden;
-resize:both;
-overflow:auto;
-}
 
-.rcc-main {
-position: absolute;
-top: 45px;
-max-width: 530px;
-max-height: 320px;
 }
-
 .rc-side{
 position: relative;
 background: white;
@@ -35,7 +77,6 @@ border-top: 1px solid #007fad;
 border-radius: 0 0 10px 10px;
 margin: 0 auto;
 
-overflow:auto;
 }
 
 .camps-menu select {
@@ -51,9 +92,16 @@ overflow:auto;
 
 .rc-btn {
   text-align: center;
-  padding: 30px 5px 30px 2px;
+  padding: 3px 5px 3px 2px;
 }
 
-
+.shockvalue{
+  margin-left: 30px;
+  margin-top: 15px;
+}
+.yourstats{
+  margin-left: 30px;
+  margin-top: 15px;
+}
 
 

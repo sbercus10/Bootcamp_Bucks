@@ -4,18 +4,25 @@ $font-family-sans-serif: 'Open Sans', sans-serif;
 
 $font-size-base: 16px;
 
-$navbar-default-bg: $blue;
-$navbar-default-link-color: lighten($navbar-default-bg, 35%);
+$panel-default-heading-bg: red;
+$panel-inner-border: red;
 
-$jumbotron-heading-color: #e3edde;
-$jumbotron-padding: 70px;
+
+$navbar-default-bg: white;
+$navbar-default-link-color: #0BA086;
+$navbar-default-link-hover-color: darken(#0BA086, 12%);
+$navbar-default-link-hover-bg: light(#0BA086, 3%);
+
+$jumbotron-heading-color: #0BA086;
+$jumbotron-padding: 120px;
+$jumbotron-margin-top:50px;
 // $headings-color: #51b051;
 
-$brand-primary: $green;
-$brand-success: $green;
-$brand-info: $blue;
-$brand-warning: $yellow;
-$brand-danger: $dark-gray;
+$brand-primary: #0BA086;
+$brand-success: black;
+$brand-info: black;
+$brand-warning: red;
+$brand-danger: red;
 
 $state-success-text: $green;
 $state-success-bg: $brand-success;
