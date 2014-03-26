@@ -1,8 +1,11 @@
 <div class="container">
   <div class="real_cost_header">
     <h1>The Real Cost of Coding Bootcamp</h1>
-    <span><p>Based on your current salary and the cost of tuition from attending <%= @real_cost.bootcamp_id %>.</p><h3><strong><%= @real_cost.breakeven_time %> </strong>weeks to breakeven.</h3></span>
-    <span><p>According to the national average salary, a Jr. Rails Developer makes $67,000 a year.</p><h3>This means a <strong><%= @real_cost.yearly_increase %>% </strong>increase in your yearly salary.</h3></span>
+    <span><p>Based on your current salary and the cost of tuition from attending <%= @real_cost.bootcamp_id %>.</p>
+
+      <h3><%= @real_cost.breakeven_time %> weeks: Estimated time (in weeks) to breakeven.</h3></span>
+      <h3><%=@real_cost.yearly_increase %>%: Estimated increase in your yearly salary.</h3>
+      <p>According to the national average salary, a Jr. Rails Developer makes $67,000 a year.</p>
   </div>
 </div>
 
