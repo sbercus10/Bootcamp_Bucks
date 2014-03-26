@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140324220219) do
+ActiveRecord::Schema.define(:version => 20140326224333) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -50,11 +50,13 @@ ActiveRecord::Schema.define(:version => 20140324220219) do
     t.string   "name"
     t.integer  "tuition_cost"
     t.integer  "down_payment"
+    t.datetime "start_date"
+    t.datetime "end_date"
     t.integer  "length"
     t.string   "city"
+    t.integer  "cpi"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
-    t.integer  "users_id"
   end
 
   create_table "real_costs", :force => true do |t|
@@ -62,7 +64,6 @@ ActiveRecord::Schema.define(:version => 20140324220219) do
     t.integer  "loan_length"
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
-    t.string   "bootcamp"
     t.integer  "down_payment"
     t.integer  "total_payment_due"
     t.integer  "true_cost"
@@ -113,6 +114,8 @@ ActiveRecord::Schema.define(:version => 20140324220219) do
     t.string   "linkedin_profile"
     t.string   "facebook_profile"
     t.string   "twitter_profile"
+    t.string   "bootcamp_name"
+    t.integer  "loan_info"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

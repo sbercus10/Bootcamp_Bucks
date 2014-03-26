@@ -18,13 +18,13 @@ $jumbotron-padding: 120px;
 $jumbotron-margin-top:50px;
 // $headings-color: #51b051;
 
-$brand-primary: #0BA086;
-$brand-success: #1DB442;
+$brand-primary: #6EB481;
+$brand-success: #6EB481;
 $brand-info: #1DB442;
 $brand-warning: red;
 $brand-danger: red;
 
-$state-success-text: #1DB442;
+$state-success-text: $off;
 $state-success-bg: $brand-success;
 $state-success-border: darken($state-success-bg, 7%);
 
