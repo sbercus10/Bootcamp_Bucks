@@ -1,6 +1,6 @@
 <div class="container">
   <div class="real_cost_header">
-    <h1>Real Cost of Coding Bootcamp</h1>
+    <h1>The Real Cost of Coding Bootcamp</h1>
     <span><p>Based on your current salary and the cost of tuition from attending <%= @real_cost.bootcamp_id %>.</p><h3><strong><%= @real_cost.breakeven_time %> </strong>weeks to breakeven.</h3></span>
     <span><p>According to the national average salary, a Jr. Rails Developer makes $67,000 a year.</p><h3>This means a <strong><%= @real_cost.yearly_increase %>% </strong>increase in your yearly salary.</h3></span>
   </div>
@@ -8,30 +8,32 @@
 
 <br>
 
-<div class="row">
-  <div class="col-xs-4"> 
-    <div class="text-center circle green">  
-      <i class="fa fa-5x fa-usd"></i>
+<div class="bottom-part">
+  <div class="row">
+    <div class="col-xs-4"> 
+      <div class="text-center circle green">  
+        <i class="fa fa-5x fa-usd"></i>
+      </div>
+      <h2 class="text-center">$<%= @real_cost.true_cost %></h2>
+      <h3 class="text-center green-text">REAL COST</h3>
+      <p class="real_calc_bottom_text">Your true cost for attending this bootcamp</p>
     </div>
-    <h2 class="text-center">$<%= @real_cost.true_cost %></h2>
-    <h3 class="text-center green-text">REAL COST</h3>
-    <p>Your true cost for attending this bootcamp</p>
-  </div>
-  <div class="col-xs-4 middle"> 
-    <div class="text-center circle blue">  
-      <i class="fa fa-5x fa-thumbs-down"></i>
+    <div class="col-xs-4 middle"> 
+      <div class="text-center circle blue">  
+        <i class="fa fa-5x fa-thumbs-down"></i>
+      </div>
+      <h2 class="text-center">$<%= @real_cost.total_payment_due %></h2>
+      <h3 class="text-center blue-text">TOTAL PAYMENT</h3>
+      <p class="real_calc_bottom_text">Your total payment owed if you finance your bootcamp through Bootcamp Bucks</p>
     </div>
-    <h2 class="text-center">$<%= @real_cost.total_payment_due %></h2>
-    <h3 class="text-center blue-text">TOTAL PAYMENT</h3>
-    <p>Your total payment owed if you finance your bootcamp through Bootcamp Bucks</p>
-  </div>
-  <div class="col-xs-4 "> 
-     <div class="text-center circle purple">  
-      <i class="fa fa-5x fa-money"></i>
+    <div class="col-xs-4 "> 
+       <div class="text-center circle purple">  
+        <i class="fa fa-5x fa-money"></i>
+      </div>
+       <h2 class="text-center">$<%= @real_cost.down_payment %></h2>
+       <h3 class="text-center purple-text">DOWN PAYMENT</h3>
+       <p class="real_calc_bottom_text">You will owe a down payment (25% of tuition)</p>
     </div>
-     <h2 class="text-center">$<%= @real_cost.down_payment %></h2>
-     <h3 class="text-center purple-text">DOWN PAYMENT</h3>
-     <p>You will owe a down payment (25% of tuition)</p>
   </div>
 </div>
 
