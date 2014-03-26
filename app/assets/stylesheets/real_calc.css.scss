@@ -28,6 +28,12 @@ color: #0B7786;
   max-width: 100%;
   height: auto;
 }
+
+.real_cost_header{
+  background-color: lightgrey;
+  padding: 20px;
+}
+
 .rc-main{
 margin-left: 30px;
 padding-left: 30px;
@@ -102,6 +108,46 @@ margin: 0 auto;
 .yourstats{
   margin-left: 30px;
   margin-top: 15px;
+}
+
+.middle{
+  border-right: 1px dashed black;
+  border-left: 1px dashed black;
+}
+
+.circle{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  padding-top: 10px;
+  margin: auto;
+  i{
+  color: white;
+  }
+}
+
+.green{
+  background-color: green;
+}
+
+.green-text{
+  color: green;
+}
+
+.blue{
+  background-color: blue;
+}
+
+.blue-text{
+  color: blue;
+}
+
+.purple{
+  background-color: purple;
+}
+
+.purple-text{
+  color: purple;
 }
 
 
