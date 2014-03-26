@@ -10,8 +10,10 @@ background-size: 100%;}
 // background-repeat: no-repeat;
 // background-size: 800px 650px;
 width: 800px;
+height: 600px;
 max-width: 100%;
-margin-top: 30px;
+max-height: 100%;
+margin-top: 10px;
 padding-top: 15px;
 margin-left: 4%;
 text-shadow: .025px .025px white;
@@ -51,8 +53,8 @@ background-color: transparent;
 
 padding: 10px 10px 10px 20px;
 width: 340px;
-margin-left: 575px;
-margin-top: 0px;
+margin-left: 505px;
+margin-top: -90px;
 margin-bottom: 20px;
 font-size: 15px;
 background-color: white;
@@ -67,6 +69,11 @@ transition: all .2s ease-in-out;
 z-index: 99;
 -webkit-backface-visibility: hidden;
 
+}
+
+.devise{
+  margin-top: 30px;
+  padding-top: 50px;
 }
 .rc-side{
 position: relative;
@@ -93,6 +100,11 @@ margin: 0 auto;
 .rc-btn {
   text-align: center;
   padding: 3px 5px 3px 2px;
+}
+
+.form{
+
+
 }
 
 .shockvalue{
