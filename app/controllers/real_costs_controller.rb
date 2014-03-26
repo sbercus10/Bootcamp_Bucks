@@ -50,5 +50,6 @@ class RealCostsController < ApplicationController
 
   def show
     @real_cost = RealCost.find(params[:id])
+    @bootcamp = Bootcamp.find(@real_cost.bootcamp_id)
   end
 end
