@@ -10,8 +10,10 @@ background-size: 100%;}
 // background-repeat: no-repeat;
 // background-size: 800px 650px;
 width: 800px;
+height: 600px;
 max-width: 100%;
-margin-top: 30px;
+max-height: 100%;
+
 padding-top: 15px;
 margin-left: 4%;
 text-shadow: .025px .025px white;
@@ -57,6 +59,8 @@ max-width: 100%;
   background-color: transparent;
 }
 
+
+
 .rc-calc {
   padding: 10px 10px 10px 20px;
   width: 340px;
@@ -75,6 +79,12 @@ max-width: 100%;
   transition: all .2s ease-in-out;
   z-index: 99;
   -webkit-backface-visibility: hidden;
+}
+
+
+.devise{
+  margin-top: 30px;
+  padding-top: 50px;
 }
 
 .rc-side{
