@@ -13,23 +13,19 @@
 
     
       <%= form_for @real_costs, controller: :real_cost, method: :create do |f| %>
-  <!-- user selects bootcamp by name from db -->
-  <%#= f.collection_select(:name, @bootcamps, :id, :name ) %>
-  <%#= f.select(:name, Bootcamp.all, :prompt => "Select a Bootcamp") %>
+  
       <%= label_tag(:bootcamp, "Select a bootcamp") %>
 
       <%= f.collection_select :bootcamp_id, Bootcamp.find(:all), :id, :name %>
     
-  <!-- <%#= f.select :bootcamp_id, [@bootcamps.each { |x| x.name }] %> -->
-  <!-- user input for current_salary -->
-  
-    <br>
-    <br>
-    <%= label_tag(:salary, "Enter your current salary") %>
-    <%= f.text_field(:salary) %>
-    <br>
-    <br>
-  <!-- user input for loan length -->
+ 
+      <br>
+      <br>
+      <%= label_tag(:salary, "Enter your current salary") %>
+      <%= f.text_field(:salary) %>
+      <br>
+      <br>
+    <!-- user input for loan length -->
   
   <%= label_tag(:loan_length, "How many months will it take you to pay off your loan?") %>
   <fieldset>

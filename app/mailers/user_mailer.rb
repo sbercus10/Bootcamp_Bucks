@@ -5,6 +5,6 @@ class UserMailer < ActionMailer::Base
   
   def welcome(user)
     @user = User.find(user)
-    mail(to: @user.email, subject: "Hi #{ @user.email }, Welcome to Bootcamp Bucks!")
+    mail(to: @user.email, subject: "Welcome to Bootcamp Bucks!")
   end
 end
