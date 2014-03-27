@@ -1,14 +1,13 @@
 <div class="container">
   <div class="real_cost_header text-center">
-    <h2>The Real Cost of <strong><%= @bootcamp.name %></strong></h2>
+    <h1>Your Real Cost of <strong><%= @bootcamp.name %></strong></h1>
     
-      <h3><strong><%= @real_cost.breakeven_time %> weeks</strong>: Estimated time to breakeven.</h3></span>
+      <hr>
+      <h3><strong><%= @real_cost.yearly_increase %>%</strong>: Estimated increase in your yearly salary if you accept a job as a Jr. Developer.</h3></span>
+      <h3><strong><%= @real_cost.breakeven_time %></strong>: Estimated number of weeks on the job as a Jr. Developer for you to breakeven.</h3></span>
 
-      <h3><strong><%= @real_cost.yearly_increase %>%</strong>: Estimated increase in your yearly salary.</h3></span>
-
-
-      <br>
-       <a class="btn btn-primary btn-lg" href="/users/sign_up">Apply for a Loan</a>
+      <hr>
+       <a class="btn btn-primary btn-lg" href="/users/sign_up">Apply for Financial Aid</a>
       <br> 
 
       <br>
