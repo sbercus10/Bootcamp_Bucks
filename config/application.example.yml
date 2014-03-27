@@ -19,3 +19,11 @@ ROLES: [admin, user, VIP]
 SECRET_TOKEN: 
 DEVISE_TOKEN: 
 DEVISE_MAILER: 
+
+development:
+  PUBLISHABLE_KEY: 
+  SECRET_KEY: 
+
+production:
+  PUBLISHABLE_KEY: 
+  SECRET_KEY: 
