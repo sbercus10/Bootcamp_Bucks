@@ -1,10 +1,10 @@
-class CalcForm 
+# class CalcForm 
 
-  extend ActiveModel::Naming
-  include ActiveModel::Conversion
-  include ActiveModel::Validations
+#   extend ActiveModel::Naming
+#   include ActiveModel::Conversion
+#   include ActiveModel::Validations
 
 
-  attr_accessible :loan_length, :salary
+#   attr_accessible :loan_length, :salary
   
-end
+# end
