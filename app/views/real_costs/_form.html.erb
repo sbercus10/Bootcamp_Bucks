@@ -1,17 +1,16 @@
 <div class="main">
-<div class="container">
-<div class="rc-main">
-<h3><strong>Real Cost Calculator</strong></h3>
+  <div class="container">
+    <div class="rc-main">
+      <h3><strong>BOOTCAMP BUCKS REAL COST CALCULATOR</strong></h3>
+      <h4>Uncover your real cost of a development bootcamp <br>that takes your opportunity cost into consideration.</h4>
+      <br>
+      <h3>Did you know?</h3>
+      <p>That the national average <br> salary for a Jr. Software Developer <br>in the United States is $67,000!</p>
+    </div>
+      <div class="rc-calc">
+        <div class="row">
+         <div class="form">
 
-<h4>Your actual cost to attend a Coding Bootcamp</h4>
-<br>
-</div>
-
-<div class="rc-calc">
-<div class="row">
-<div class="form">
-
- 
     
       <%= form_for @real_costs, controller: :real_cost, method: :create do |f| %>
   <!-- user selects bootcamp by name from db -->
@@ -42,17 +41,17 @@
 
 
   <div class="rc-btn">
-    <button type="submit" class="btn btn-default">Calculate</button>
+    <button type="submit" class="btn btn-primary">Calculate my Real Cost</button>
   </div>
+  <hr>
+  <%= link_to 'Go Back Home', :back %>
 
 
 </div>
 <% end %>
 </div>
 </div>
-<div class="back">
-  <%= link_to 'Go back', :back %>
-</div>
+
 </div>
 </form>
   <!-- Rest of form omitted -->

@@ -50,13 +50,11 @@ ActiveRecord::Schema.define(:version => 20140326224333) do
     t.string   "name"
     t.integer  "tuition_cost"
     t.integer  "down_payment"
-    t.datetime "start_date"
-    t.datetime "end_date"
     t.integer  "length"
     t.string   "city"
-    t.integer  "cpi"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+    t.integer  "users_id"
   end
 
   create_table "real_costs", :force => true do |t|
@@ -114,7 +112,6 @@ ActiveRecord::Schema.define(:version => 20140326224333) do
     t.string   "linkedin_profile"
     t.string   "facebook_profile"
     t.string   "twitter_profile"
-    t.string   "bootcamp_name"
     t.integer  "loan_info"
   end
 

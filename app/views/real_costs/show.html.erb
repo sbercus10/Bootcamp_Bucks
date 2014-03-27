@@ -1,6 +1,6 @@
 <div class="container">
   <div class="real_cost_header text-center">
-    <h2>The Real Cost of <%= @bootcamp.name %></h2>
+    <h2>The Real Cost of <strong><%= @bootcamp.name %></strong></h2>
     
       <h3><strong><%= @real_cost.breakeven_time %> weeks</strong>: Estimated time to breakeven.</h3></span>
 
@@ -52,12 +52,6 @@
 </div> <!-- bottom part -->
 
 <hr>
-
-</p>$<%= @real_cost.down_payment %>
-
-
-<%= @real_cost.inspect %>
-
 
   <footer>
       <div class="col">
