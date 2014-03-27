@@ -10,10 +10,11 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-// = require jquery
-// = require jquery_ujs
-// = require jquery.ui.all
-// = require bootstrap
-// = require_tree .
+//= require jquery
+//= require jquery_ujs
+//= require jquery.ui.all
+//= require bootstrap
+//= require active_admin/base
+//= require_tree .
 
 

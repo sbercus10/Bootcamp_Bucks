@@ -20,8 +20,9 @@ $light-black: #434245;
 @import "bootstrap_and_overrides";
 @import "jquery.ui.all";
 @import "framework_and_overrides";
-@import "real_calc.css.scss";
-@import "login.css.scss";
+@import "bootstrap";
+@import "real_calc";
+@import "login";
 
 footer{
   margin-left: 30px;
