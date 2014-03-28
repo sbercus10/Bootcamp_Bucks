@@ -42,7 +42,7 @@
     Bootcamp.create(name:"General Assembly (U/X Dev)", city:"New York", down_payment:"1000", length:"10", tuition_cost:"4000")
     Bootcamp.create(name:"Hack Bright Academy (Front-End Dev)", city:"San Francisco", down_payment:"625", length:"10", tuition_cost:"2500")
     Bootcamp.create(name:"Hack Bright Academy (Python Dev)", city:"San Francisco", down_payment:"2500", length:"10", tuition_cost:"15000")
-    Bootcamp.create(name:"Hack Reactor (JavaScript Dev)", city:"San Francisco", down_payment:"4445", length:"2", tuition_cost:"17780")
+    Bootcamp.create(name:"Hack Reactor (JavaScript Dev)", city:"San Francisco", down_payment:"4445", length:"12", tuition_cost:"17780")
     Bootcamp.create(name:"Hacker You (Front-End Dev)", city:"Toronto", down_payment:"1625", length:"9", tuition_cost:"6500")
     Bootcamp.create(name:"Launch Academy (Rails Dev)", city:"New York, Boston", down_payment:"3875", length:"12", tuition_cost:"15500")
     Bootcamp.create(name:"Maker Square (Ruby & JS Dev)", city: "Austin, TX", down_payment:"3045", length:"10", tuition_cost:"12180")
