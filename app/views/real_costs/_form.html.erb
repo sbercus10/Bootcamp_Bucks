@@ -6,56 +6,38 @@
       <br>
       <h3>Did you know?</h3>
       <p>That the national average <br> salary for a Jr. Software Developer <br>in the United States is $67,000!</p>
-    </div>
+    </div> <!-- rc-main -->
       <div class="rc-calc">
         <div class="row">
          <div class="form">
-
-    
-      <%= form_for @real_costs, controller: :real_cost, method: :create do |f| %>
-  
-      <%= label_tag(:bootcamp, "Select a bootcamp") %>
-
-      <%= f.collection_select :bootcamp_id, Bootcamp.find(:all), :id, :name %>
-    
- 
-      <br>
-      <br>
-      <%= label_tag(:salary, "Enter your current salary") %>
-      <%= f.text_field(:salary) %>
-      <br>
-      <br>
-    <!-- user input for loan length -->
-  
-  <%= label_tag(:loan_length, "How many months will it take you to pay off your loan?") %>
-  <fieldset>
-    <%= f.radio_button :loan_length, '12' %> <%= f.label "12 months"%><br /> 
-    <%= f.radio_button :loan_length, '24' %> <%= f.label "24 months" %><br /> 
-    <%= f.radio_button :loan_length, '36' %> <%= f.label "36 months" %><br />
-  </fieldset>
-  <br>
-
-
-  <div class="rc-btn">
-    <button type="submit" class="btn btn-primary">Calculate my Real Cost</button>
-  </div>
-  <hr>
-  <%= link_to 'Go Back Home', :back %>
-
-
-</div>
-<% end %>
-</div>
-</div>
-
-</div>
-</form>
-  <!-- Rest of form omitted -->
-
-
-
-
-</div>
+          <%= form_for @real_costs, controller: :real_cost, method: :create do |f| %>
+          <%= label_tag(:bootcamp, "Select a bootcamp") %>
+          <%= f.collection_select :bootcamp_id, Bootcamp.find(:all), :id, :name %>
+          <br>
+          <br>
+          <%= label_tag(:salary, "Enter your current salary") %>
+          <%= f.text_field(:salary) %>
+          <br>
+          <br>
+        <!-- user input for loan length -->
+          <%= label_tag(:loan_length, "How many months will it take you to pay off your loan?") %>
+          <fieldset>
+            <%= f.radio_button :loan_length, '12' %> <%= f.label "12 months"%><br /> 
+            <%= f.radio_button :loan_length, '24' %> <%= f.label "24 months" %><br /> 
+            <%= f.radio_button :loan_length, '36' %> <%= f.label "36 months" %><br />
+          </fieldset>
+          <br>
+          <div class="rc-btn">
+            <button type="submit" class="btn btn-primary">Calculate my Real Cost</button>
+          </div>
+          <hr>
+          <%= link_to 'Go Back Home', :back %>
+         </div> <!-- form -->
+        <% end %>
+      </div> <!-- row -->
+    </div> <!-- rc-calc -->
+  </div> <!-- container -->
+</div> <!-- main -->
  
 
 
