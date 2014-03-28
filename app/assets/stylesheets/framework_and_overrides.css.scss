@@ -20,22 +20,17 @@ img {
 }
 .container {
   padding-top: 10px;
+  margin-top: -10px;
   color: #777;
 }
 .jumbotron-text{
   color: darken(#0BA086, 4%);
   font-size: 56%;
+  margin-bottom: -150px;
 }
 
 .jumbotron {
   background: url(jumbo.jpg);
-  padding-top: 70px;
-  padding-bottom: 15px;
-  margin-top: 50;
-  margin-bottom: 10px;
-  text-align: left;
-  color: darken($light-blue, 22%);
-  text-shadow: .25px .25px .25px #375e3a;
   }
 
 // override for the 'Home' navigation link

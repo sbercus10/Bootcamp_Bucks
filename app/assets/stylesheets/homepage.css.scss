@@ -9,6 +9,16 @@ a:hover {
   color: lighten($lime, 7%);
 }
 
+.jumbotron {
+  background: url(jumbo.jpg);
+  padding-top: 70px;
+  padding-bottom: 15px;
+  margin-top: 50;
+  margin-bottom: 10px;
+  text-align: left;
+  color: darken($light-blue, 22%);
+  text-shadow: .25px .25px .25px #375e3a;
+}
 .section{
   color: darken($light-blue, 27%);
   margin-left: 30px;
@@ -60,7 +70,8 @@ body {
 }
 
 .bottom-part{
-  margin-bottom: 30px;
+  margin-top: -100px;
+  margin-bottom: 50px;
 }
 
 // // on new.html.erb
