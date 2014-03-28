@@ -1,6 +1,6 @@
 ActiveAdmin.register AdminUser do 
 
-  menu :if => proc{ current_admin_user }
+  
 
 before_filter :authenticate_admin_user!, only: [:index]    
   index do                            
